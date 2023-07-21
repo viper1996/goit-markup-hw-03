@@ -1,4 +1,8 @@
-/*main styles*/ 
+/**
+  |============================
+  | Variables
+  |============================
+*/
 
 :root {
     --navyblue: #2E2F42;
@@ -10,10 +14,57 @@
     --ocean: #404BBF;
 }
 
-body { 
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+
+body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--white);
     color: var(--slate);
+}
+
+button:hover {
+    background-color: var(--ocean);
+    color: var(--white);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* reset end */
+
+.container{
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 a {
@@ -24,20 +75,23 @@ a:active {
     color: var(--ocean);
 }
 
-button:hover {
-    background-color: var(--ocean);
-    color: var(--white);
-}
-
-.link { 
-    text-decoration: none;
-}
-
-.list {
-    list-style-type: none;
-}
-
 /*header*/
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
 
 .header-logo {
     color: var(--iris);
@@ -51,6 +105,11 @@ button:hover {
 
 .header-logo-sp {
     color: var(--navyblue);
+}
+
+.header-list{
+    display: flex;
+    gap: 40px;
 }
 
 .navigation-link {
@@ -71,6 +130,12 @@ button:hover {
 
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.header-address-list{
+    display: flex;
+    gap: 40px;
 }
 
 .header-address {
@@ -94,6 +159,17 @@ button:hover {
     background-color: var(--navyblue);
 }
 
+.main-title{
+    margin-bottom: 32px;
+}
+
+.main-container{
+    padding-left: 331px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-right: 331px;
+}
+
 .main-title {
     color: var(--white);
     text-align: center;
@@ -113,10 +189,24 @@ button:hover {
     cursor: pointer;
     background-color: var(--iris);
     border: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .button:focus {
     background-color: var(--ocean);
+}
+
+.advantages{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.advantages-list{
+    display: flex;
+    gap: 24px;
 }
 
 .advantages-list-title {
@@ -125,12 +215,17 @@ button:hover {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advantages-list-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.programs{
+    margin-bottom: 120px;
 }
 
 .programs-title {
@@ -142,8 +237,15 @@ button:hover {
     text-transform: capitalize;
 }
 
+.programs-list{
+    display: flex;
+    gap: 24px;
+}
+
 .team {
     background-color: var(--cloud);
+    margin-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -154,6 +256,11 @@ button:hover {
     letter-spacing: 0.02em;
     background: var(--cloud);
     text-transform: capitalize;
+}
+
+.team-list{
+    display: flex;
+    gap: 24px;
 }
 
 .team-list-item {
@@ -167,6 +274,7 @@ button:hover {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-list-description {
@@ -180,6 +288,11 @@ button:hover {
 
 .footer {
     background-color: var(--navyblue);
+}
+
+.footer-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -203,9 +316,17 @@ button:hover {
     line-height: 1.5;
     letter-spacing: 0.02em;
     background-color: var(--navyblue);
+    margin-top: 18px;
+    w
 }
 
 /*portfolio*/
+
+.portfolio-button-list{
+    display: flex;
+    gap: 48px;
+    margin-left: 310px;
+}
 
 .portfolio-button-link {
     font-family: 'Roboto', sans-serif;
@@ -220,6 +341,11 @@ button:hover {
     border: none;
 }
 
+.portfolio-button-list{
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
 .portfolio-button-link:focus {
     color: var(--white);
     background-color: var(--ocean);
@@ -231,11 +357,19 @@ button:hover {
 
 }
 
+.img-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
 .img-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-top: 32px;
 }
 
 .img-description {
@@ -243,4 +377,9 @@ button:hover {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
+}
+
+.footer-description{
+    width: 264px;
 }
