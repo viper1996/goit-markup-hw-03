@@ -360,10 +360,6 @@ a:active {
 
 /*portfolio*/
 
-.header-list{
-    justify-content: center;
-}
-
 .portfolio-button{
     padding-top: 96px;
     padding-bottom: 120px;
@@ -396,6 +392,7 @@ a:active {
 .portfolio-button-list{
     margin-top: 96px;
     margin-bottom: 72px;
+    justify-content: center;
 }
 
 .portfolio-button-link:focus {
