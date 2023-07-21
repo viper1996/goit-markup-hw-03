@@ -174,6 +174,7 @@ a:active {
 
 .title {
     background-color: var(--navyblue);
+    padding: 188px 0;
 }
 
 .main-container{
@@ -268,6 +269,7 @@ a:active {
     background-color: var(--cloud);
     padding: 120px;
     padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -318,6 +320,7 @@ a:active {
 
 .footer {
     background-color: var(--navyblue);
+    padding: 100px 0;
 }
 
 .footer-container{
@@ -334,6 +337,8 @@ a:active {
     letter-spacing: 0.03em;
     background-color: var(--navyblue);
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-sp {
@@ -351,10 +356,16 @@ a:active {
 
 /*portfolio*/
 
+.portfolio-button{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .portfolio-button-list{
     display: flex;
     gap: 48px;
     margin-left: 310px;
+    gap: 24px;
 }
 
 .portfolio-button-link {
@@ -368,6 +379,9 @@ a:active {
     cursor: pointer;
     background: var(--cloud);
     border: none;
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
 }
 
 .portfolio-button-list{
@@ -378,11 +392,13 @@ a:active {
 .portfolio-button-link:focus {
     color: var(--white);
     background-color: var(--ocean);
+    border: 1px solid;
 }
 
 .portfolio-button-link:hover {
     color: var(--white);
     background-color: var(--ocean);
+    border: 1px solid;
 
 }
 
@@ -390,6 +406,12 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+}
+
+.img-list-container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .img-title {
