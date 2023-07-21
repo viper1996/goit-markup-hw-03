@@ -57,6 +57,10 @@ ol {
     margin-bottom: 0;
 }
 
+img{
+    display: block;
+}
+
 /* reset end */
 
 .container{
@@ -355,6 +359,10 @@ a:active {
 }
 
 /*portfolio*/
+
+.header-list{
+    justify-content: center;
+}
 
 .portfolio-button{
     padding-top: 96px;
