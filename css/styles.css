@@ -75,11 +75,26 @@ a:active {
     color: var(--ocean);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /*header*/
 
 .header{
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigation{
@@ -101,6 +116,7 @@ a:active {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px
 }
 
 .header-logo-sp {
@@ -118,6 +134,7 @@ a:active {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0
 }
 
 .navigation-link:hover {
@@ -159,10 +176,6 @@ a:active {
     background-color: var(--navyblue);
 }
 
-.main-title{
-    margin-bottom: 32px;
-}
-
 .main-container{
     padding-left: 331px;
     padding-top: 188px;
@@ -177,6 +190,8 @@ a:active {
     line-height: 1.07;
     letter-spacing: 0.02em;
     background: var(--navyblue);
+    margin-bottom: 32px;
+    max-width: 496px
 }
 
 .button {
@@ -191,6 +206,8 @@ a:active {
     border: none;
     display: flex;
     margin: 0 auto;
+    display: block;
+    min-width: 169px;
     padding: 16px 32px;
     border-radius: 4px;
 }
@@ -209,6 +226,10 @@ a:active {
     gap: 24px;
 }
 
+.advantages-list-item{
+    width: calc((100% - 72px) / 4)
+}
+
 .advantages-list-title {
     color: var(--navyblue);
     font-size: 20px;
@@ -225,7 +246,7 @@ a:active {
 }
 
 .programs{
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .programs-title {
@@ -235,6 +256,7 @@ a:active {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px
 }
 
 .programs-list{
@@ -244,7 +266,7 @@ a:active {
 
 .team {
     background-color: var(--cloud);
-    margin-top: 120px;
+    padding: 120px;
     padding-bottom: 120px;
 }
 
@@ -256,6 +278,7 @@ a:active {
     letter-spacing: 0.02em;
     background: var(--cloud);
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-list{
@@ -265,6 +288,11 @@ a:active {
 
 .team-list-item {
     background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-container{
+    padding: 32px 0;
 }
 
 .team-name {
@@ -275,6 +303,7 @@ a:active {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-list-description {
@@ -282,6 +311,7 @@ a:active {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /*footer*/
@@ -317,7 +347,6 @@ a:active {
     letter-spacing: 0.02em;
     background-color: var(--navyblue);
     margin-top: 18px;
-    w
 }
 
 /*portfolio*/
