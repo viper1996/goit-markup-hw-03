@@ -382,6 +382,7 @@ a:active {
     padding: 12px 24px;
     border: 1px solid #e7e9fc;
     border-radius: 4px;
+    justify-content: center;
 }
 
 .portfolio-button-list{
@@ -392,14 +393,13 @@ a:active {
 .portfolio-button-link:focus {
     color: var(--white);
     background-color: var(--ocean);
-    border: 1px solid;
+    border: 1px solid transparent;
 }
 
 .portfolio-button-link:hover {
     color: var(--white);
     background-color: var(--ocean);
-    border: 1px solid;
-
+    border: 1px solid transparent;
 }
 
 .img-list{
