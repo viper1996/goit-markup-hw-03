@@ -178,14 +178,13 @@ a:active {
 
 .title {
     background-color: var(--navyblue);
-    padding: 188px 0;
+    /*padding-top: 188px;
+    padding: auto;*/
 }
 
 .main-container{
-    padding-left: 331px;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    padding-right: 331px;
+padding-top: 188px;
+padding-bottom: 188px;
 }
 
 .main-title {
@@ -196,7 +195,9 @@ a:active {
     letter-spacing: 0.02em;
     background: var(--navyblue);
     margin-bottom: 32px;
-    max-width: 496px
+    max-width: 496px;
+    margin: auto;
+    padding-bottom: 48px    ;
 }
 
 .button {
@@ -327,10 +328,6 @@ a:active {
     padding: 100px 0;
 }
 
-.footer-container{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
 
 .footer-logo {
     color: var(--iris);
@@ -342,7 +339,6 @@ a:active {
     background-color: var(--navyblue);
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px;
 }
 
 .footer-logo-sp {
@@ -367,10 +363,9 @@ a:active {
 
 .portfolio-button-list{
     display: flex;
-    gap: 48px;
-    margin-left: 310px;
     gap: 24px;
 }
+
 
 .portfolio-button-link {
     font-family: 'Roboto', sans-serif;
@@ -390,7 +385,6 @@ a:active {
 }
 
 .portfolio-button-list{
-    margin-top: 96px;
     margin-bottom: 72px;
     justify-content: center;
 }
