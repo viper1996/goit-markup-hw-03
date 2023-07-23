@@ -119,6 +119,7 @@ a:active {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .header-logo-sp {
@@ -128,7 +129,6 @@ a:active {
 .header-list{
     display: flex;
     gap: 40px;
-    margin-left: 76px;
 }
 
 .navigation-link {
@@ -405,6 +405,7 @@ a:active {
 .img-list-container{
     border: 1px solid #e7e9fc;
     border-top: none;
+    padding: 32px 16px;
 }
 
 .img-title {
@@ -413,8 +414,6 @@ a:active {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    margin-top: 32px;
-    margin-left: 16px;
 }
 
 .img-description {
@@ -422,8 +421,6 @@ a:active {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
-    margin-left: 16px;
 }
 
 .footer-description{
